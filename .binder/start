@@ -3,6 +3,8 @@
 # set environment vars
 export TF_ENABLE_ZENDNN_OPTS=1
 export TF_ENABLE_ONEDNN_OPTS=0
+export ZENDNN_LOG_OPTS=ALL:2
+export OMP_NUM_THREADS=16
 
 # container entrypoint
 exec "$@"
